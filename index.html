@@ -4,7 +4,12 @@
   <meta charset="utf-8">
   <title>Image Guess</title>
   <link rel="stylesheet" type="text/css" href="index.css"></link>
-  <script type="text/javascript"></script>
+  <script type="text/javascript">
+    window.onload = init;
+    function init() {
+      var image = document.getElementById("zero");
+    }
+  </script>
 </head>
 <body>
   <img id="zero" src="zeroblur.jpg">
