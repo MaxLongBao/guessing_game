@@ -12,9 +12,12 @@
         images[i].onclick = showAnswer;
       }
     }
-    function showAnswer() {
-      var image = document.getElementById("zero");
-      image.src = "images/zero.jpg";
+    function showAnswer(eventObj) {
+      var image = eventObj.target;
+
+      var name = image.id;
+      name = "images/" + name + ".jpg";
+      image.src = name;
     }
   </script>
 </head>
